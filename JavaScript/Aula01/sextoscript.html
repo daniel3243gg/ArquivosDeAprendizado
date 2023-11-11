@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiçoes em Js</title>
+    <style>
+        Body{
+            font: normal 25pt arial
+
+
+        }
+        p#Prin{
+            color: blue;
+
+
+        }
+
+    </style>  
+
+</head>
+<body>
+    <h1>DESCUBRA OQUE VOCE É:</h1>
+    <p id="Prin">Digite seu estado de origem: </p> <input type="text" name="txtvel" id="txtvel">
+    <div id="Resu">CLIQUE AQUII PARA O RESULTADO</div> 
+    <div id="escreva"></div>
+    <script>
+        document.getElementById('Resu').addEventListener('click', clickk )
+        var user = window.document.getElementById('txtvel').value
+        function clickk() {
+        var escrito = document.getElementById('escreva')
+        if(user === 'brasil'){
+            escrito.innerHTML = 'parabens voce é brasileiro'
+        }else{
+        escrito.innerHTML = 'VOCE NAO É BRASILEIRO'
+
+
+
+
+        }
+        }
+
+    </script>
+</body>
+</html>

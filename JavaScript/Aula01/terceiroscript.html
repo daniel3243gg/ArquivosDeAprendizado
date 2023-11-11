@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: aqua;
+        color: brown;
+        font: normal 20pt arial;
+
+    }
+</style>
+</head>
+<body>
+    <h1 name="VF">Estudos De Dom</h1>
+    <p class="VF">APRENDENDO USAR O <strong>DOM</strong></p>
+    <p>AQUI VAI O RESULTADO</p>
+    <div id="VF">clique em min</div>
+    <script>
+        var cor = window.prompt("ESCOLHA A COR DE FUNDO")
+        var p2 = window.document.getElementById('VF')
+        window.document.body.style.background = cor
+        p2.style.background = 'green'
+        var p3 = window.document.getElementsByName('VF')[0]
+        p3.style.color = 'pink'
+        var p4 = window.document.getElementsByClassName('VF')[0]
+        document.write(p4.innerHTML)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUARTOSCRIPT</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: blue;
+            font: normal 20pt helvetica;
+
+        }
+        div#area{
+            font: normal 25pt arial;
+            background-color: darkgreen;
+            color: gold;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>EVENTOS DOM</h1>
+    <div id="area" >INTERAJA</div>
+    <script>
+        var a = document.getElementById('area')
+        document.getElementById('area').addEventListener('click', clicar)
+        document.getElementById('area').addEventListener('mouseenter', entrou )
+        document.getElementById('area').addEventListener('mouseout', saiu)
+         function clicar(){
+            var cor = window.prompt("DIGITE A COR NOVA DO BOTAO")
+            a.style.background = cor
+
+
+         }
+         function saiu(){
+           a.style.background = 'red'
+
+
+         }
+         function entrou(){
+            
+            a.innerText = "entrou"
+
+
+         }
+
+    </script>
+</body>
+</html>

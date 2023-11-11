@@ -1,0 +1,11 @@
+git clone < link > #clona um respositorio online
+!git config --global user.name "${GITHUB_USER}" #define seu username no git
+!git config --global user.email "${GITHUB_EMAIL}" #define seu email no git
+!git status #verifica os status da pasta 
+!git add #adiciona um arquivo no git/ deixar concienti do arquivo
+!git commit -m # compromete algo 
+!push origin main #voce envia a alteraçao local para a remota 
+
+
+
+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
