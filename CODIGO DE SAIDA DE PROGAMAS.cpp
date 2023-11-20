@@ -7,7 +7,7 @@ int main(){
     ofstream Arquivo;
     Arquivo.open("Texto.txt", std::ios_base::app);
         Arquivo << "19287738723232"; 
-        Arquivo << "   CARLOS E GAY O GUSTAVO É FALSO É O FERNANDO NAO É IGUAL NA WEB";
+        Arquivo << "   TESTE1";
     Arquivo.close();
 
 
